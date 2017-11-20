@@ -1,0 +1,10 @@
+etc/janus
+usr/bin/janus
+usr/lib/*/janus/*/libjanus_*.so
+usr/lib/*/janus/*/libjanus_*.so.*
+usr/share/janus/demos
+usr/share/janus/recordings
+usr/share/janus/streams
+usr/bin/janus-pp-rec
+usr/include/janus
+

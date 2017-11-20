@@ -1,0 +1,22 @@
+Source: janus
+Section: comm
+Priority: optional
+Maintainer: John Metta <mail@johnmetta.com>
+Build-Depends: autotools-dev, debhelper, dh-autoreconf, dh-systemd, dpkg-dev, gengetopt, libcurl4-openssl-dev, libglib2.0-dev, libjansson-dev, libmicrohttpd-dev, libnice-dev, libogg-dev, libopus-dev, librabbitmq-dev, libsofia-sip-ua-dev, libsrtp2-dev | libsrtp0-dev, libssl-dev, libwebsockets-dev (>> 1.3), libavutil-dev, libavcodec-dev, libavformat-dev, pkg-config, rename,
+Build-Depends-Indep:
+ doxygen,
+ graphviz,
+Standards-Version: 4.1.1
+Homepage: http://janus.conf.meetecho.com
+Vcs-git: https://github.com/johnmetta/janus-deb.git
+Vcs-browser: https://github.com/johnmetta/janus-deb
+
+Package: janus
+Architecture: any
+Depends:
+ janus (=${binary:Version}), ${misc:Depends}, ${shlibs:Depends}, libcurl4-openssl-dev, libglib2.0-dev, libjansson-dev, libnice-dev, libsrtp2-dev | libsrtp0-dev
+Recommends:
+ ssl-cert,
+Description: general purpose WebRTC gateway
+ Janus is a general purpose WebRTC Gateway with a minimal footprint.
+
